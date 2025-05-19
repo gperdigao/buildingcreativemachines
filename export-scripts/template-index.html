@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Galeria de Sketches p5.js</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+      background: #f9f9f9;
+    }
+    h1 {
+      text-align: center;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      max-width: 800px;
+      margin: auto;
+    }
+    li {
+      background: white;
+      margin: 0.5rem 0;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    a {
+      text-decoration: none;
+      color: #0366d6;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Galeria de Sketches</h1>
+  <ul>
+    {{SKETCH_LIST}}
+  </ul>
+</body>
+</html>
