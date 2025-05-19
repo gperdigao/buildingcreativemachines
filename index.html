@@ -2,282 +2,52 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
-  <title>Building Creative Machines Visual Gallery</title>
+  <title>Building Creative Machines</title>
   <style>
     body {
       font-family: sans-serif;
+      background: #f5f5f5;
+      margin: 0;
       padding: 2rem;
-      background: #f9f9f9;
     }
     h1 {
       text-align: center;
+      margin-bottom: 2rem;
     }
-    ul {
-      list-style: none;
-      padding: 0;
-      max-width: 800px;
-      margin: auto;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 2rem;
     }
-    li {
+    .card {
       background: white;
-      margin: 0.5rem 0;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
     }
-    a {
-      text-decoration: none;
-      color: #0366d6;
+    .card:hover {
+      transform: scale(1.01);
+    }
+    iframe {
+      width: 100%;
+      height: 240px;
+      border: none;
+    }
+    .title {
+      padding: 1rem;
       font-weight: bold;
+      text-align: center;
+      font-size: 1rem;
+      color: #0366d6;
     }
   </style>
 </head>
 <body>
-  <h1>Building Creative Machines Visual Gallery</h1>
-  <ul>
-    <li><a href="sketch-1974503-the-space-sprint/index.html">sketch-1974503-the-space-sprint</a></li>
-<li><a href="sketch-1975117-breakout/index.html">sketch-1975117-breakout</a></li>
-<li><a href="sketch-1975142-snake/index.html">sketch-1975142-snake</a></li>
-<li><a href="sketch-1975153-perlin-magic/index.html">sketch-1975153-perlin-magic</a></li>
-<li><a href="sketch-1975161-moiré-effect/index.html">sketch-1975161-moiré-effect</a></li>
-<li><a href="sketch-1975181-interactive-fractal-tree/index.html">sketch-1975181-interactive-fractal-tree</a></li>
-<li><a href="sketch-1975182-fireworks-effect/index.html">sketch-1975182-fireworks-effect</a></li>
-<li><a href="sketch-1975183-pebble-into-a-pond/index.html">sketch-1975183-pebble-into-a-pond</a></li>
-<li><a href="sketch-1975185-mesmerizing-pattern/index.html">sketch-1975185-mesmerizing-pattern</a></li>
-<li><a href="sketch-1975197-particle-cat/index.html">sketch-1975197-particle-cat</a></li>
-<li><a href="sketch-1975205-snooker-chaos/index.html">sketch-1975205-snooker-chaos</a></li>
-<li><a href="sketch-1975208-forces/index.html">sketch-1975208-forces</a></li>
-<li><a href="sketch-1975211-follow-light-painting/index.html">sketch-1975211-follow-light-painting</a></li>
-<li><a href="sketch-1975215-swirling-effect/index.html">sketch-1975215-swirling-effect</a></li>
-<li><a href="sketch-1975217-fibonacci-spiral/index.html">sketch-1975217-fibonacci-spiral</a></li>
-<li><a href="sketch-1975219-lissajous-curve/index.html">sketch-1975219-lissajous-curve</a></li>
-<li><a href="sketch-1975221-mandelbrot-set/index.html">sketch-1975221-mandelbrot-set</a></li>
-<li><a href="sketch-1975223-sierpinski-chaos-triangle/index.html">sketch-1975223-sierpinski-chaos-triangle</a></li>
-<li><a href="sketch-1975225-times-tables-on-a-circle/index.html">sketch-1975225-times-tables-on-a-circle</a></li>
-<li><a href="sketch-1975227-i-time-tables/index.html">sketch-1975227-i-time-tables</a></li>
-<li><a href="sketch-1975231-diffusion-limited-aggregation/index.html">sketch-1975231-diffusion-limited-aggregation</a></li>
-<li><a href="sketch-1975232-stuck-particles/index.html">sketch-1975232-stuck-particles</a></li>
-<li><a href="sketch-1975233-anti-gravity-explosion/index.html">sketch-1975233-anti-gravity-explosion</a></li>
-<li><a href="sketch-1975235-red-repulsion/index.html">sketch-1975235-red-repulsion</a></li>
-<li><a href="sketch-1975241-red-and-green-festival/index.html">sketch-1975241-red-and-green-festival</a></li>
-<li><a href="sketch-1975242-fourier-series-epicycle/index.html">sketch-1975242-fourier-series-epicycle</a></li>
-<li><a href="sketch-1975243-cellular-automata/index.html">sketch-1975243-cellular-automata</a></li>
-<li><a href="sketch-1975244-julia-set/index.html">sketch-1975244-julia-set</a></li>
-<li><a href="sketch-1975247-lindenmayer-system/index.html">sketch-1975247-lindenmayer-system</a></li>
-<li><a href="sketch-1975250-mandelbrot-set/index.html">sketch-1975250-mandelbrot-set</a></li>
-<li><a href="sketch-1975252-gravitational-attraction/index.html">sketch-1975252-gravitational-attraction</a></li>
-<li><a href="sketch-1975257-gray-scott-model/index.html">sketch-1975257-gray-scott-model</a></li>
-<li><a href="sketch-1975259-harmonograph/index.html">sketch-1975259-harmonograph</a></li>
-<li><a href="sketch-1975261-tessellations/index.html">sketch-1975261-tessellations</a></li>
-<li><a href="sketch-1975592-circle-sounds/index.html">sketch-1975592-circle-sounds</a></li>
-<li><a href="sketch-1975595-bounce-around/index.html">sketch-1975595-bounce-around</a></li>
-<li><a href="sketch-1975605-fourier-noises/index.html">sketch-1975605-fourier-noises</a></li>
-<li><a href="sketch-1975615-shooting-balls/index.html">sketch-1975615-shooting-balls</a></li>
-<li><a href="sketch-1975645-3d-box/index.html">sketch-1975645-3d-box</a></li>
-<li><a href="sketch-1975646-3d-spiral/index.html">sketch-1975646-3d-spiral</a></li>
-<li><a href="sketch-1975647-3d-fractal-tree/index.html">sketch-1975647-3d-fractal-tree</a></li>
-<li><a href="sketch-1975648-3d-particle-system/index.html">sketch-1975648-3d-particle-system</a></li>
-<li><a href="sketch-1975649-interactive-light-show/index.html">sketch-1975649-interactive-light-show</a></li>
-<li><a href="sketch-1975880-boids/index.html">sketch-1975880-boids</a></li>
-<li><a href="sketch-1975881-fractal-forests/index.html">sketch-1975881-fractal-forests</a></li>
-<li><a href="sketch-1975884-gravity-effects/index.html">sketch-1975884-gravity-effects</a></li>
-<li><a href="sketch-1975887-fade-away/index.html">sketch-1975887-fade-away</a></li>
-<li><a href="sketch-1975888-fade-away-fest/index.html">sketch-1975888-fade-away-fest</a></li>
-<li><a href="sketch-1975889-attraction-fest/index.html">sketch-1975889-attraction-fest</a></li>
-<li><a href="sketch-1975890-firework-fest/index.html">sketch-1975890-firework-fest</a></li>
-<li><a href="sketch-1975892-soundify/index.html">sketch-1975892-soundify</a></li>
-<li><a href="sketch-1975893-fluid-motion/index.html">sketch-1975893-fluid-motion</a></li>
-<li><a href="sketch-1975896-bubble-sort/index.html">sketch-1975896-bubble-sort</a></li>
-<li><a href="sketch-1975897-truchet-tiling/index.html">sketch-1975897-truchet-tiling</a></li>
-<li><a href="sketch-1975898-breadth-first-search/index.html">sketch-1975898-breadth-first-search</a></li>
-<li><a href="sketch-1975902-convex-hull-algorithm/index.html">sketch-1975902-convex-hull-algorithm</a></li>
-<li><a href="sketch-1975903-finding-pi/index.html">sketch-1975903-finding-pi</a></li>
-<li><a href="sketch-1976849-kaleidoscope/index.html">sketch-1976849-kaleidoscope</a></li>
-<li><a href="sketch-1976851-colorful-shadow-puppetry/index.html">sketch-1976851-colorful-shadow-puppetry</a></li>
-<li><a href="sketch-1976872-pendulum/index.html">sketch-1976872-pendulum</a></li>
-<li><a href="sketch-1976879-what-time-is-it/index.html">sketch-1976879-what-time-is-it</a></li>
-<li><a href="sketch-1976881-gear-with-me/index.html">sketch-1976881-gear-with-me</a></li>
-<li><a href="sketch-1993019-pixel-pong/index.html">sketch-1993019-pixel-pong</a></li>
-<li><a href="sketch-1993446-crypto-chaser/index.html">sketch-1993446-crypto-chaser</a></li>
-<li><a href="sketch-1995501-flippers/index.html">sketch-1995501-flippers</a></li>
-<li><a href="sketch-1995854-lemmings/index.html">sketch-1995854-lemmings</a></li>
-<li><a href="sketch-1996504-algorithm-g-website/index.html">sketch-1996504-algorithm-g-website</a></li>
-<li><a href="sketch-1998126-mesmerizing-effect/index.html">sketch-1998126-mesmerizing-effect</a></li>
-<li><a href="sketch-2003083-pythagoras-theorem/index.html">sketch-2003083-pythagoras-theorem</a></li>
-<li><a href="sketch-2003084-golden-ratio-and-fibonacci/index.html">sketch-2003084-golden-ratio-and-fibonacci</a></li>
-<li><a href="sketch-2003085-sinusoidal-functions/index.html">sketch-2003085-sinusoidal-functions</a></li>
-<li><a href="sketch-2003088-möbius-transformations-and-inversion/index.html">sketch-2003088-möbius-transformations-and-inversion</a></li>
-<li><a href="sketch-2003089-vector-fields-and-flow/index.html">sketch-2003089-vector-fields-and-flow</a></li>
-<li><a href="sketch-2003991-chaotic-pendulum/index.html">sketch-2003991-chaotic-pendulum</a></li>
-<li><a href="sketch-2003993-quantum-tunneling/index.html">sketch-2003993-quantum-tunneling</a></li>
-<li><a href="sketch-2003997-real-time-face-emoji-mimic/index.html">sketch-2003997-real-time-face-emoji-mimic</a></li>
-<li><a href="sketch-2054539-counter/index.html">sketch-2054539-counter</a></li>
-<li><a href="sketch-2085389-mister-dj/index.html">sketch-2085389-mister-dj</a></li>
-<li><a href="sketch-2100932-lemmings-v2/index.html">sketch-2100932-lemmings-v2</a></li>
-<li><a href="sketch-2106394-lemming-labyrinth/index.html">sketch-2106394-lemming-labyrinth</a></li>
-<li><a href="sketch-2314528-respirar/index.html">sketch-2314528-respirar</a></li>
-<li><a href="sketch-2353604-meissner-effect/index.html">sketch-2353604-meissner-effect</a></li>
-<li><a href="sketch-2353605-effects-of-gravitational-waves/index.html">sketch-2353605-effects-of-gravitational-waves</a></li>
-<li><a href="sketch-2353606-reaction-diffusion-algorithm/index.html">sketch-2353606-reaction-diffusion-algorithm</a></li>
-<li><a href="sketch-2353608-clifford-attractor/index.html">sketch-2353608-clifford-attractor</a></li>
-<li><a href="sketch-2353611-product-adoption/index.html">sketch-2353611-product-adoption</a></li>
-<li><a href="sketch-2355059-aggressive-audio-reactive-particle-system/index.html">sketch-2355059-aggressive-audio-reactive-particle-system</a></li>
-<li><a href="sketch-2355065-quasicrystal-flow/index.html">sketch-2355065-quasicrystal-flow</a></li>
-<li><a href="sketch-2355067-kaleidoscopic-vortex/index.html">sketch-2355067-kaleidoscopic-vortex</a></li>
-<li><a href="sketch-2355070-hypercube-flux/index.html">sketch-2355070-hypercube-flux</a></li>
-<li><a href="sketch-2355090-lemming-drop/index.html">sketch-2355090-lemming-drop</a></li>
-<li><a href="sketch-2355106-lemming-drop/index.html">sketch-2355106-lemming-drop</a></li>
-<li><a href="sketch-2355314-g-power/index.html">sketch-2355314-g-power</a></li>
-<li><a href="sketch-2359508-lemming-drop/index.html">sketch-2359508-lemming-drop</a></li>
-<li><a href="sketch-2359609-funny-rhino/index.html">sketch-2359609-funny-rhino</a></li>
-<li><a href="sketch-2359635-mini-car-racing/index.html">sketch-2359635-mini-car-racing</a></li>
-<li><a href="sketch-2359850-whisker-chase/index.html">sketch-2359850-whisker-chase</a></li>
-<li><a href="sketch-2388050-super-car-game/index.html">sketch-2388050-super-car-game</a></li>
-<li><a href="sketch-2389128-retro-penalty-game/index.html">sketch-2389128-retro-penalty-game</a></li>
-<li><a href="sketch-2389142-asteroid-dodger/index.html">sketch-2389142-asteroid-dodger</a></li>
-<li><a href="sketch-2392424-rainfall/index.html">sketch-2392424-rainfall</a></li>
-<li><a href="sketch-2392444-snow-simulation/index.html">sketch-2392444-snow-simulation</a></li>
-<li><a href="sketch-2395873-harmonic-flow/index.html">sketch-2395873-harmonic-flow</a></li>
-<li><a href="sketch-2395900-lissajous-curve-controls/index.html">sketch-2395900-lissajous-curve-controls</a></li>
-<li><a href="sketch-2395910-superformula/index.html">sketch-2395910-superformula</a></li>
-<li><a href="sketch-2395911-hypotrochoid/index.html">sketch-2395911-hypotrochoid</a></li>
-<li><a href="sketch-2395970-lorenz-attractor-with-sliders/index.html">sketch-2395970-lorenz-attractor-with-sliders</a></li>
-<li><a href="sketch-2395974-charged-particle/index.html">sketch-2395974-charged-particle</a></li>
-<li><a href="sketch-2395978-magnetic-field/index.html">sketch-2395978-magnetic-field</a></li>
-<li><a href="sketch-2395984-magnetic-field-and-gravity/index.html">sketch-2395984-magnetic-field-and-gravity</a></li>
-<li><a href="sketch-2396267-dynamic-harmony/index.html">sketch-2396267-dynamic-harmony</a></li>
-<li><a href="sketch-2396272-radiant-flux/index.html">sketch-2396272-radiant-flux</a></li>
-<li><a href="sketch-2396279-luminous-flow/index.html">sketch-2396279-luminous-flow</a></li>
-<li><a href="sketch-2396290-kinetic-grid/index.html">sketch-2396290-kinetic-grid</a></li>
-<li><a href="sketch-2396295-ethereal-pulse-grid/index.html">sketch-2396295-ethereal-pulse-grid</a></li>
-<li><a href="sketch-2398679-bouncing-and-shifting-winds/index.html">sketch-2398679-bouncing-and-shifting-winds</a></li>
-<li><a href="sketch-2399390-ocean-waves/index.html">sketch-2399390-ocean-waves</a></li>
-<li><a href="sketch-2399391-more-waves/index.html">sketch-2399391-more-waves</a></li>
-<li><a href="sketch-2399397-brownian-waves/index.html">sketch-2399397-brownian-waves</a></li>
-<li><a href="sketch-2399405-probabilistic-drift/index.html">sketch-2399405-probabilistic-drift</a></li>
-<li><a href="sketch-2399441-brownian-cannon/index.html">sketch-2399441-brownian-cannon</a></li>
-<li><a href="sketch-2401555-maze-glide/index.html">sketch-2401555-maze-glide</a></li>
-<li><a href="sketch-2408925-cos-sin-curves/index.html">sketch-2408925-cos-sin-curves</a></li>
-<li><a href="sketch-2408932-eulers-number/index.html">sketch-2408932-eulers-number</a></li>
-<li><a href="sketch-2408936-vector-addition/index.html">sketch-2408936-vector-addition</a></li>
-<li><a href="sketch-2412298-flower-garden/index.html">sketch-2412298-flower-garden</a></li>
-<li><a href="sketch-2412305-butterflies/index.html">sketch-2412305-butterflies</a></li>
-<li><a href="sketch-2412918-flow-field-of-particles/index.html">sketch-2412918-flow-field-of-particles</a></li>
-<li><a href="sketch-2412939-flock-of-birds/index.html">sketch-2412939-flock-of-birds</a></li>
-<li><a href="sketch-2412963-fireflies-with-kuramoto-model/index.html">sketch-2412963-fireflies-with-kuramoto-model</a></li>
-<li><a href="sketch-2415406-mycelium-network/index.html">sketch-2415406-mycelium-network</a></li>
-<li><a href="sketch-2415410-nebulae-network/index.html">sketch-2415410-nebulae-network</a></li>
-<li><a href="sketch-2415413-flowing-contours/index.html">sketch-2415413-flowing-contours</a></li>
-<li><a href="sketch-2415417-pulsating-orbitals/index.html">sketch-2415417-pulsating-orbitals</a></li>
-<li><a href="sketch-2415423-coral-dream/index.html">sketch-2415423-coral-dream</a></li>
-<li><a href="sketch-2417370-click-shift-tiles/index.html">sketch-2417370-click-shift-tiles</a></li>
-<li><a href="sketch-2418391-mechanical-harmony/index.html">sketch-2418391-mechanical-harmony</a></li>
-<li><a href="sketch-2418415-sun-earth-and-moon/index.html">sketch-2418415-sun-earth-and-moon</a></li>
-<li><a href="sketch-2420305-random-walkers/index.html">sketch-2420305-random-walkers</a></li>
-<li><a href="sketch-2420310-bezier-curve/index.html">sketch-2420310-bezier-curve</a></li>
-<li><a href="sketch-2420338-words-in-particles/index.html">sketch-2420338-words-in-particles</a></li>
-<li><a href="sketch-2420380-textspark/index.html">sketch-2420380-textspark</a></li>
-<li><a href="sketch-2420395-particle-word-star/index.html">sketch-2420395-particle-word-star</a></li>
-<li><a href="sketch-2423528-jump-scare/index.html">sketch-2423528-jump-scare</a></li>
-<li><a href="sketch-2425508-sorting-spirals/index.html">sketch-2425508-sorting-spirals</a></li>
-<li><a href="sketch-2425512-radial-sorting-waves/index.html">sketch-2425512-radial-sorting-waves</a></li>
-<li><a href="sketch-2425513-sorting-galaxy/index.html">sketch-2425513-sorting-galaxy</a></li>
-<li><a href="sketch-2425517-milky-way/index.html">sketch-2425517-milky-way</a></li>
-<li><a href="sketch-2425521-gravity-dance/index.html">sketch-2425521-gravity-dance</a></li>
-<li><a href="sketch-2425522-gravity-dance-with-limits/index.html">sketch-2425522-gravity-dance-with-limits</a></li>
-<li><a href="sketch-2428964-celestial-whirl/index.html">sketch-2428964-celestial-whirl</a></li>
-<li><a href="sketch-2431080-serigrafias/index.html">sketch-2431080-serigrafias</a></li>
-<li><a href="sketch-2431681-art-generation/index.html">sketch-2431681-art-generation</a></li>
-<li><a href="sketch-2437971-ofo-star/index.html">sketch-2437971-ofo-star</a></li>
-<li><a href="sketch-2438287-epic-fireworks/index.html">sketch-2438287-epic-fireworks</a></li>
-<li><a href="sketch-2438306-universe-creation/index.html">sketch-2438306-universe-creation</a></li>
-<li><a href="sketch-2438316-random-forest/index.html">sketch-2438316-random-forest</a></li>
-<li><a href="sketch-2438324-spring-time/index.html">sketch-2438324-spring-time</a></li>
-<li><a href="sketch-2438335-metatrons-cube/index.html">sketch-2438335-metatrons-cube</a></li>
-<li><a href="sketch-2438351-yet-another-superformula/index.html">sketch-2438351-yet-another-superformula</a></li>
-<li><a href="sketch-2438367-gray-scott-reaction-diffusion/index.html">sketch-2438367-gray-scott-reaction-diffusion</a></li>
-<li><a href="sketch-2438386-dynamic-flow-field/index.html">sketch-2438386-dynamic-flow-field</a></li>
-<li><a href="sketch-2439204-a-algorithm/index.html">sketch-2439204-a-algorithm</a></li>
-<li><a href="sketch-2439206-prims-algorithm/index.html">sketch-2439206-prims-algorithm</a></li>
-<li><a href="sketch-2439208-maze-problem-solution/index.html">sketch-2439208-maze-problem-solution</a></li>
-<li><a href="sketch-2439209-infinite-maze/index.html">sketch-2439209-infinite-maze</a></li>
-<li><a href="sketch-2439788-diffusion-limited-aggregation-simulation/index.html">sketch-2439788-diffusion-limited-aggregation-simulation</a></li>
-<li><a href="sketch-2439790-langtons-ant-simulation/index.html">sketch-2439790-langtons-ant-simulation</a></li>
-<li><a href="sketch-2439792-double-pendulum-with-chaotic-motion/index.html">sketch-2439792-double-pendulum-with-chaotic-motion</a></li>
-<li><a href="sketch-2439797-4d-tesseract-2d-plane/index.html">sketch-2439797-4d-tesseract-2d-plane</a></li>
-<li><a href="sketch-2439802-parchment-geometric-harmony/index.html">sketch-2439802-parchment-geometric-harmony</a></li>
-<li><a href="sketch-2439804-interactive-mondrian-draw/index.html">sketch-2439804-interactive-mondrian-draw</a></li>
-<li><a href="sketch-2439805-interactive-miro-inspired-canvas/index.html">sketch-2439805-interactive-miro-inspired-canvas</a></li>
-<li><a href="sketch-2439806-pollock-splatter-art/index.html">sketch-2439806-pollock-splatter-art</a></li>
-<li><a href="sketch-2439808-pollock-style-art/index.html">sketch-2439808-pollock-style-art</a></li>
-<li><a href="sketch-2439811-miró-inspired-art/index.html">sketch-2439811-miró-inspired-art</a></li>
-<li><a href="sketch-2439812-da-vincis-inspired-sketches/index.html">sketch-2439812-da-vincis-inspired-sketches</a></li>
-<li><a href="sketch-2441528-universe-creation/index.html">sketch-2441528-universe-creation</a></li>
-<li><a href="sketch-2441578-dynamic-particle-formation/index.html">sketch-2441578-dynamic-particle-formation</a></li>
-<li><a href="sketch-2442939-infinite-dynamic-formations/index.html">sketch-2442939-infinite-dynamic-formations</a></li>
-<li><a href="sketch-2442954-trees-of-all-species/index.html">sketch-2442954-trees-of-all-species</a></li>
-<li><a href="sketch-2442968-infinite-life-structures/index.html">sketch-2442968-infinite-life-structures</a></li>
-<li><a href="sketch-2442973-skylines/index.html">sketch-2442973-skylines</a></li>
-<li><a href="sketch-2442976-galaxies-clouds-and-waves/index.html">sketch-2442976-galaxies-clouds-and-waves</a></li>
-<li><a href="sketch-2443319-what-time-is-it/index.html">sketch-2443319-what-time-is-it</a></li>
-<li><a href="sketch-2443329-watch/index.html">sketch-2443329-watch</a></li>
-<li><a href="sketch-2443373-reality-is-an-illusion/index.html">sketch-2443373-reality-is-an-illusion</a></li>
-<li><a href="sketch-2450196-triangle-and-angles/index.html">sketch-2450196-triangle-and-angles</a></li>
-<li><a href="sketch-2456911-liquides/index.html">sketch-2456911-liquides</a></li>
-<li><a href="sketch-2459236-liquid-motion/index.html">sketch-2459236-liquid-motion</a></li>
-<li><a href="sketch-2459267-vertex-shader/index.html">sketch-2459267-vertex-shader</a></li>
-<li><a href="sketch-2459271-earth-with-sky/index.html">sketch-2459271-earth-with-sky</a></li>
-<li><a href="sketch-2459967-merger-sponge/index.html">sketch-2459967-merger-sponge</a></li>
-<li><a href="sketch-2460858-dynamic-particles/index.html">sketch-2460858-dynamic-particles</a></li>
-<li><a href="sketch-2460862-a-galaxy/index.html">sketch-2460862-a-galaxy</a></li>
-<li><a href="sketch-2460958-dynamic-world-of-physics/index.html">sketch-2460958-dynamic-world-of-physics</a></li>
-<li><a href="sketch-2462122-earth/index.html">sketch-2462122-earth</a></li>
-<li><a href="sketch-2463832-epic-perlin/index.html">sketch-2463832-epic-perlin</a></li>
-<li><a href="sketch-2463838-3d-particle-vortex/index.html">sketch-2463838-3d-particle-vortex</a></li>
-<li><a href="sketch-2471206-aurora-nexus/index.html">sketch-2471206-aurora-nexus</a></li>
-<li><a href="sketch-2471212-particles-circles-and-mazes-chaos/index.html">sketch-2471212-particles-circles-and-mazes-chaos</a></li>
-<li><a href="sketch-2471230-layers-of-complexity/index.html">sketch-2471230-layers-of-complexity</a></li>
-<li><a href="sketch-2471243-more-tiles-and-balls/index.html">sketch-2471243-more-tiles-and-balls</a></li>
-<li><a href="sketch-2472587-line-particle-loop/index.html">sketch-2472587-line-particle-loop</a></li>
-<li><a href="sketch-2477879-algorithm-g/index.html">sketch-2477879-algorithm-g</a></li>
-<li><a href="sketch-2482025-fractal-raymarching/index.html">sketch-2482025-fractal-raymarching</a></li>
-<li><a href="sketch-2482029-lunatic-fractal-corridor/index.html">sketch-2482029-lunatic-fractal-corridor</a></li>
-<li><a href="sketch-2482072-chaos-rider/index.html">sketch-2482072-chaos-rider</a></li>
-<li><a href="sketch-2482080-lemming-cloud/index.html">sketch-2482080-lemming-cloud</a></li>
-<li><a href="sketch-2482086-crystal-deflector/index.html">sketch-2482086-crystal-deflector</a></li>
-<li><a href="sketch-2483348-infinite-vectors/index.html">sketch-2483348-infinite-vectors</a></li>
-<li><a href="sketch-2484941-3d-bezier-curves/index.html">sketch-2484941-3d-bezier-curves</a></li>
-<li><a href="sketch-2485755-your-desktop/index.html">sketch-2485755-your-desktop</a></li>
-<li><a href="sketch-2485762-pomodoro-style-focus-timer/index.html">sketch-2485762-pomodoro-style-focus-timer</a></li>
-<li><a href="sketch-2485790-pixel-panties/index.html">sketch-2485790-pixel-panties</a></li>
-<li><a href="sketch-2488927-generative-circular-city/index.html">sketch-2488927-generative-circular-city</a></li>
-<li><a href="sketch-2488930-winter-cycle/index.html">sketch-2488930-winter-cycle</a></li>
-<li><a href="sketch-2490401-chaotic-colorful-lissajous/index.html">sketch-2490401-chaotic-colorful-lissajous</a></li>
-<li><a href="sketch-2490402-gravity-orbits/index.html">sketch-2490402-gravity-orbits</a></li>
-<li><a href="sketch-2490404-superellipse-patterns/index.html">sketch-2490404-superellipse-patterns</a></li>
-<li><a href="sketch-2490406-quaternion-fractal-waveforms/index.html">sketch-2490406-quaternion-fractal-waveforms</a></li>
-<li><a href="sketch-2490408-hypercomplex-möbius-transformations/index.html">sketch-2490408-hypercomplex-möbius-transformations</a></li>
-<li><a href="sketch-2490410-dynamic-apollonian-flows/index.html">sketch-2490410-dynamic-apollonian-flows</a></li>
-<li><a href="sketch-2490412-chaotic-quaternion-attractors/index.html">sketch-2490412-chaotic-quaternion-attractors</a></li>
-<li><a href="sketch-2490413-emergent-swarm-biology/index.html">sketch-2490413-emergent-swarm-biology</a></li>
-<li><a href="sketch-2499048-generative-landscapes/index.html">sketch-2499048-generative-landscapes</a></li>
-<li><a href="sketch-2499059-happy-2025/index.html">sketch-2499059-happy-2025</a></li>
-<li><a href="sketch-2517433-illusoria/index.html">sketch-2517433-illusoria</a></li>
-<li><a href="sketch-2523221-magnetic-repulsion/index.html">sketch-2523221-magnetic-repulsion</a></li>
-<li><a href="sketch-2574544-workshop-iscte/index.html">sketch-2574544-workshop-iscte</a></li>
-<li><a href="sketch-2575953-workshop-cst/index.html">sketch-2575953-workshop-cst</a></li>
-<li><a href="sketch-2575960-centric-flows/index.html">sketch-2575960-centric-flows</a></li>
-<li><a href="sketch-2575967-centric-kaleidoscopic/index.html">sketch-2575967-centric-kaleidoscopic</a></li>
-<li><a href="sketch-2586960-workshop-pestana/index.html">sketch-2586960-workshop-pestana</a></li>
-<li><a href="sketch-2589681-living-fractal-sphere/index.html">sketch-2589681-living-fractal-sphere</a></li>
-<li><a href="sketch-2592239-workshop-redevaerk/index.html">sketch-2592239-workshop-redevaerk</a></li>
-<li><a href="sketch-2601729-core-resonance-the-infinite-pulse/index.html">sketch-2601729-core-resonance-the-infinite-pulse</a></li>
-<li><a href="sketch-2603324-eg-bank/index.html">sketch-2603324-eg-bank</a></li>
-<li><a href="sketch-2618213-dynamic-filters/index.html">sketch-2618213-dynamic-filters</a></li>
-<li><a href="sketch-2618214-dynamic-filters-ii/index.html">sketch-2618214-dynamic-filters-ii</a></li>
-<li><a href="sketch-2646130-errorflux/index.html">sketch-2646130-errorflux</a></li>
-<li><a href="sketch-2646132-faultline-reverie/index.html">sketch-2646132-faultline-reverie</a></li>
-  </ul>
+  <h1>Building Creative Machines</h1>
+  <div class="grid">
+    <!-- GERAÇÃO AUTOMÁTICA AQUI -->
+    {{SKETCH_CARDS}}
+  </div>
 </body>
 </html>
-"<!-- trigger GitHub Pages -->" 
