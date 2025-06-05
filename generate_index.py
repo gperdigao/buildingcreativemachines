@@ -1,6 +1,6 @@
 import os
 
-EXPORT_DIR = '../export'
+EXPORT_DIR = 'export'
 sketches = sorted(os.listdir(EXPORT_DIR))
 
 # Criar a lista de <li> com links
@@ -10,7 +10,7 @@ for folder in sketches:
         items.append(f'<li><a href="{folder}/index.html">{folder}</a></li>')
 
 # Lê o modelo
-with open('template-index.html', 'r', encoding='utf-8') as f:
+with open(os.path.join('export-scripts', 'template-index.html'), 'r', encoding='utf-8') as f:
     template = f.read()
 
 # Substitui {{SKETCH_LIST}} pelo HTML gerado
