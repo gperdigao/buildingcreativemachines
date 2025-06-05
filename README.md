@@ -14,4 +14,4 @@ Welcome to a collection of over 200 generative art sketches built using [p5.js](
 
 ## How it works
 
-Each sketch is in its own folder with an `index.html` and `sketch.js`, and displayed on a visual gallery powered by GitHub Pages.
+Each sketch is in its own folder with an `index.html` and `sketches.js`, and displayed on a visual gallery powered by GitHub Pages.
