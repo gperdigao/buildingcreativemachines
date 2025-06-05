@@ -31,7 +31,7 @@ for _, row in df.iterrows():
     with open(os.path.join(sketch_dir, 'index.html'), 'w', encoding='utf-8') as f:
         f.write(html)
 
-    # 4b) sketch.js
+    # 4b) sketches.js
     with open(os.path.join(sketch_dir, 'sketches.js'), 'w', encoding='utf-8') as f:
         f.write(code)
 
